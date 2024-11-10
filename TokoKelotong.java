@@ -28,7 +28,7 @@ public class TokoKelotong {
             System.out.println("2. Beras\t" + beras);
             System.out.println("3. Minyak\t" + minyak);
             System.out.println("4. Telur\t" + telur);
-            System.out.println("5. Tepungt\t" + tepung);
+            System.out.println("5. Tepung\t" + tepung);
             System.out.println("=================================");
             System.out.println("Silahkan Pilih");
             pilihan = input.nextInt();
