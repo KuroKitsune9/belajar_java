@@ -11,6 +11,9 @@ public class TokoKelotong {
     // Pilihan
     static int pilihan;
 
+    // Jumlah Barang yang di beli
+    static int jumlahBarang;
+
     // Total Bayar
     static int totalBayar = 0;
 
@@ -32,20 +35,31 @@ public class TokoKelotong {
             System.out.println("=================================");
             System.out.println("Silahkan Pilih");
             pilihan = input.nextInt();
+            int hargaBarang = 0;
+            String namaBarang = "";
+
+            System.out.println("Masukan jumlah barang");
+            jumlahBarang = input.nextInt();
 
             if (pilihan == 1) {
-                totalBayar += indomie;
+                hargaBarang = indomie;
+                namaBarang = "Indomie";
             } else if (pilihan == 2) {
-                totalBayar += beras;
+                hargaBarang = beras;
+                namaBarang = "Beras";
             } else if (pilihan == 3) {
-                totalBayar += minyak;
+                hargaBarang = minyak;
+                namaBarang = "Minyak";
             } else if (pilihan == 4) {
-                totalBayar += telur;
+                hargaBarang = telur;
+                namaBarang = "Telur";
             } else if (pilihan == 5) {
-                totalBayar += tepung;
+                hargaBarang = tepung;
+                namaBarang = "Tepung";
             } else {
                 System.out.println("Menu Tidak Tersedias");
             }
+
             System.out.println("Masih Ingin Membeli?");
             System.out.println("1. Ya");
             System.out.println("0. Tidak");
@@ -55,9 +69,12 @@ public class TokoKelotong {
             } else {
                 ulang = false;
             }
+
+            int totalHargaBayar = hargaBarang * jumlahBarang;
+            totalBayar += totalHargaBayar;
         }
 
-        System.out.println("Jumlah Total Yang Harus Di Bayar: " + totalBayar);
+        System.out.println("Jumlah Total Yang Harus Di Bayar: " + totalBayar + " ");
         input.close();
     }
 }
