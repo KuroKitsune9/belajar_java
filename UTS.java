@@ -80,7 +80,6 @@ public class UTS {
 
             totalBayar += totalHargaBayar;
 
-            // Menampilkan struk untuk transaksi saat ini
             System.out.println("==================== STRUK PEMBELIAN ====================");
             System.out.println("Nama Barang         : " + namaBarang);
             System.out.println("Jumlah Barang       : " + jumlahBarang);
