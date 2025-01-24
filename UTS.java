@@ -41,6 +41,7 @@ public class UTS {
             int hargaBarang = 0;
             String namaBarang = "";
 
+            // kondisi pemilihan barang
             if (pilihan == 1) {
                 hargaBarang = Laptop;
                 namaBarang = "Laptop";
