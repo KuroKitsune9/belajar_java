@@ -16,13 +16,13 @@ public class HotelBooking {
                 new Room("Suite", 2000000, true)
         };
 
-        System.out.println("Selamat datang di Hotel Java");
+        System.out.println("Selamat datang di Hotel Kami");
         System.out.println("============================");
 
         boolean running = true;
 
         while (running) {
-            // Menampilkan menu
+            // Menampilkan menu Pilihah Kamar
             System.out.println("\nMenu:");
             System.out.println("1. Lihat daftar kamar");
             System.out.println("2. Pesan kamar");
